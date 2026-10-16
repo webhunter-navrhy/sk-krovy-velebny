@@ -68,11 +68,11 @@ a { color: inherit; }
 h1, h2, h3 { font-weight: 700; }
 h2 { margin-bottom: var(--space-3); } h3 { margin-bottom: var(--space-2); }
 .sekce p + p { margin-top: var(--space-2); }
-.hlavicka { background:#fff; border-bottom:3px solid var(--accent); position:sticky; top:0; z-index:50; }
+.hlavicka { background:var(--hneda); border-bottom:3px solid var(--accent); position:sticky; top:0; z-index:50; }
 .hlavicka .wrap { display:flex; align-items:center; justify-content:space-between; gap:var(--space-2); flex-wrap:wrap; padding-block:.4rem; }
 .hlavicka .logo { display:inline-flex; min-height:44px; align-items:center; }
 .hlavicka nav { display:flex; flex-wrap:wrap; gap:.25rem .75rem; font-size:var(--step--1); text-transform:uppercase; letter-spacing:.04em; font-weight:600; }
-.hlavicka nav a { text-decoration:none; color:var(--hneda); } .hlavicka nav a:hover { color:var(--accent); }
+.hlavicka nav a { text-decoration:none; color:#fff; padding-inline:.4rem; } .hlavicka nav a:hover { color:#f0c9a8; }
 .hero { position:relative; background:var(--tmava); color:#fff; isolation:isolate; }
 .hero-foto { position:absolute; inset:0; z-index:-1; } .hero-foto img { width:100%; height:100%; object-fit:cover; opacity:.45; }
 .hero-text { padding-block:clamp(4rem,10vw,9rem); max-width:var(--wrap); }
