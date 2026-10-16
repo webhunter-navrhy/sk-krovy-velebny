@@ -1,0 +1,94 @@
+{% extends "_base.html" %}
+{% set titulek = 'Krovy Velebný – rezivo, krovy a porez guľatiny, Kuchyňa pri Malackách' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="hero-foto">{{ img('dvor.jpg', 'Zásoba rezaného reziva na dvore prevádzky v Kuchyni', sizes='100vw') }}</div>
+  <div class="wrap hero-text">
+    <p class="nadpis-maly">Kuchyňa pri Malackách · od roku 2000</p>
+    <h1>Rezivo, krovy a porez guľatiny</h1>
+    <p class="lead">Spracúvame ihličnatú aj listnatú guľatinu na vlastných pásových pílach. Pripravíme hranoly, fošne a laty, a ak treba, postavíme aj krov na kľúč.</p>
+    <p><a class="tlacitko" href="#kontakt">Vypýtať cenovú ponuku</a> <a class="tlacitko druhe" href="#ponuka">Čo ponúkame</a></p>
+  </div>
+</section>
+
+<section class="sekce" id="ponuka">
+  <div class="wrap">
+    <h2>Produkty a služby</h2>
+    <div class="dva">
+      <div>
+        <h3>Produkty</h3>
+        <ul role="list" class="zoznam">
+          {% for s in data.sluzby %}<li><strong>{{ s.nazev }}</strong><span>{{ s.popis }}</span></li>{% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h3>Služby</h3>
+        <ul role="list" class="zoznam">
+          <li><strong>Porez z vlastnej guľatiny</strong><span>Ihličnatá aj listnatá, mäkké aj tvrdé drevo.</span></li>
+          <li><strong>Morenie reziva</strong></li>
+          <li><strong>Krov a strecha na kľúč</strong><span>Výroba a kompletná montáž.</span></li>
+          <li><strong>Zabezpečenie dopravy</strong></li>
+          <li><strong>Cenová ponuka a poradenstvo</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sekce tmava" id="krovy">
+  <div class="wrap dva stred">
+    <div>
+      <h2>Krovy na mieru</h2>
+      <p>Vyrobíme a zmontujeme krov od začiatku do konca, strecha na kľúč. Materiál režeme sami, takže viete, z čoho krov stojí.</p>
+      <p><a class="tlacitko" href="#kontakt">Opýtať sa na krov</a></p>
+    </div>
+    {{ img('nakladka.jpg', 'Nakladanie reziva na nákladné auto s hydraulickou rukou', sizes='(min-width: 48rem) 36rem, 100vw') }}
+  </div>
+</section>
+
+<section class="sekce" id="pila">
+  <div class="wrap dva stred obrat">
+    {{ img('pasova-pila.jpg', 'Smrekový kmeň na pásovej píle', sizes='(min-width: 48rem) 36rem, 100vw') }}
+    <div>
+      <h2>Porez z Vašej guľatiny</h2>
+      <p>Firma funguje od roku 2000. Máme v prevádzke dve pásové píly s maximálnym porezom do 100 cm priemeru kmeňa a dĺžky 11 m. Najčastejšie režeme smrek 1. triedy v čerstvom stave.</p>
+      <ul role="list" class="fakty">
+        <li><strong>1 500 – 2 000 m³</strong> guľatiny ročne</li>
+        <li><strong>2 pásové píly</strong> do 100 cm × 11 m</li>
+        <li><strong>17 km</strong> od Malaciek, pohodlne po celom Záhorí</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sekce svetla" id="galeria">
+  <div class="wrap">
+    <h2>Galéria</h2>
+    <div class="galeria">
+      {{ img('hranoly.jpg', 'Zviazané hranoly z čerstvého reziva', sizes='(min-width: 48rem) 24rem, 50vw') }}
+      {{ img('pila-hranoly.jpg', 'Hranoly vychádzajúce z píly', sizes='(min-width: 48rem) 24rem, 50vw') }}
+      {{ img('sklad.jpg', 'Sklad reziva na dvore prevádzky', sizes='(min-width: 48rem) 24rem, 50vw') }}
+      {{ img('gulatina.jpg', 'Guľatina pripravená na porez', sizes='(min-width: 48rem) 24rem, 50vw') }}
+      {{ img('laty.jpg', 'Narezané laty a dosky', sizes='(min-width: 48rem) 24rem, 50vw') }}
+      {{ img('gulatina2.jpg', 'Čelá smrekových guľatín', sizes='(min-width: 48rem) 24rem, 50vw') }}
+    </div>
+  </div>
+</section>
+
+<section class="sekce" id="kontakt">
+  <div class="wrap dva">
+    <div>
+      <h2>Kontakt</h2>
+      <p><strong>Krovy Velebný</strong><br>Prevádzka: Lokalita Nový Dvor 552, 900 52 Kuchyňa</p>
+      <p>Tel.: <a href="tel:0905529737">0905 529 737</a><br>E-mail: <a href="mailto:info@krovyvelebny.sk">info@krovyvelebny.sk</a></p>
+      <p><strong>Otváracie hodiny</strong><br>Po – Pi 8.00 – 16.00<br>So 7.00 – 13.00</p>
+      <p class="malo">Sídlo: Miroslav Velebný, Stromová 22, 901 01 Malacky<br>IČO 349 12 002 · IČ DPH SK 102 013 89 55</p>
+    </div>
+    <div>
+      <h3>Napíšte nám</h3>
+      {% include "_formular.html" %}
+    </div>
+  </div>
+</section>
+{% endblock %}

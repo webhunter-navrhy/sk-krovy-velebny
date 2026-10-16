@@ -1,0 +1,55 @@
+{
+  "slug": "sk-krovy-velebny",
+  "nazev": "Krovy Velebný",
+  "url": "https://webhunter-navrhy.github.io/sk-krovy-velebny/",
+  "base": "/sk-krovy-velebny/",
+  "lang": "sk",
+  "popis": "Krovy Velebný, Kuchyňa pri Malackách: rezivo, krovy na mieru a strechy na kľúč, porez z vlastnej guľatiny na pásových pílach.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "dvor.jpg",
+  "logo": "logo.png",
+  "theme_color": "#715b45",
+  "typ": "LocalBusiness",
+  "ico": "34912002",
+  "kontakt": {
+    "email": "info@krovyvelebny.sk",
+    "telefon": "0905 529 737",
+    "adresa": {
+      "ulice": "Lokalita Nový Dvor 552",
+      "psc": "900 52",
+      "mesto": "Kuchyňa",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu krovyvelebny.sk"
+  },
+  "nav": [
+    {
+      "text": "Ponuka",
+      "href": "#ponuka"
+    },
+    {
+      "text": "Krovy",
+      "href": "#krovy"
+    },
+    {
+      "text": "Píla",
+      "href": "#pila"
+    },
+    {
+      "text": "Galéria",
+      "href": "#galeria"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}
